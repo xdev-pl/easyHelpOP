@@ -1,0 +1,7 @@
+name: easyHelpOP
+version: 1.0
+author: Felulo
+main: com.felulo.easyhelpop.Main
+commands:
+  helpop:
+    description: Glowna komenda pluginu
