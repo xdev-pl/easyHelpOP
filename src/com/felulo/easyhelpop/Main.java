@@ -22,15 +22,15 @@ public class Main extends JavaPlugin implements Listener {
 				if(args.length >= 1) {
 					String message = String.join(" ", args);
 					
-					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &2Zgłoszenie zostało wysłane."));
-					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &2Administracja się z tobą skontaktuje jak tylko będzie to możliwe."));
+					sender.sendMessage(this.color("&a[&7easyHelpOP&a] &2Zgłoszenie zostało wysłane."));
+					sender.sendMessage(this.color("&a[&7easyHelpOP&a] &2Administracja się z tobą skontaktuje jak tylko będzie to możliwe."));
 					
-					Bukkit.broadcast(this.translateColors("&a[&7easyHelpOP&a] &6" + sender.getName() + " &e>>&2 " + message), "easyhelpop.admin");
+					Bukkit.broadcast(this.color("&a[&7easyHelpOP&a] &6" + sender.getName() + " &e>>&2 " + message), "easyhelpop.admin");
 				} else {
-					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &cMusisz podać treść zgłoszenia!"));
+					sender.sendMessage(this.color("&a[&7easyHelpOP&a] &cMusisz podać treść zgłoszenia!"));
 				}
 			} else {
-				sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &cNie masz uprawnień do używania tej komendy!"));
+				sender.sendMessage(this.color("&a[&7easyHelpOP&a] &cNie masz uprawnień do używania tej komendy!"));
 			}
 		}
 		return false;
