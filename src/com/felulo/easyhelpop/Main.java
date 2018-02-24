@@ -9,7 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin implements Listener {
 	
 	public String translateColors(String msg) {
-		return msg.replace("&", "§");
+		return msg.replace("&", "Â§");
 	}
 	
 	@Override
@@ -24,14 +24,14 @@ public class Main extends JavaPlugin implements Listener {
 			if(sender.hasPermission("easyhelpop.use") || sender.hasPermission("easyhelpop.admin") || sender.isOp()) {
 				if(args.length >= 1) {
 					String str = String.join(" ", args);
-					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &2Zg³oszenie zosta³o wys³ane."));
-					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &2Administracja siê z tob¹ skontaktuje jak tylko bêdzie to mo¿liwe."));
+					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &2ZgÅ‚oszenie zostaÅ‚o wysÅ‚ane."));
+					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &2Administracja siÄ™ z tobÄ… skontaktuje jak tylko bÄ™dzie to moÅ¼liwe."));
 					Bukkit.broadcast(this.translateColors("&a[&7easyHelpOP&a] &6" + sender.getName().toString() + " &e>>&2 " + str), "easyhelpop.admin");
 				} else {
-					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &cMusisz podaæ treœæ zg³oszenia!"));
+					sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &cMusisz podaÄ‡ treÅ›Ä‡ zgÅ‚oszenia!"));
 				}
 			} else {
-				sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &cNie masz uprawnieñ do u¿ywania tej komendy!"));
+				sender.sendMessage(this.translateColors("&a[&7easyHelpOP&a] &cNie masz uprawnieÅ„ do uÅ¼ywania tej komendy!"));
 			}
 		}
 		return false;
