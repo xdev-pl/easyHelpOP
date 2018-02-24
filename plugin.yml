@@ -1,6 +1,6 @@
 name: easyHelpOP
-version: 1.0
-author: Felulo
+version: 1.0.1
+author: Felulo11
 main: com.felulo.easyhelpop.Main
 commands:
   helpop:
